@@ -10,7 +10,7 @@ import Dashboard from './pages/Dashboard';
 import Matchmaker from './pages/Matchmaker';
 import Resources from './pages/Resources';
 
-export const API_BASE = 'http://localhost:5001/api';
+export const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001/api';
 
 // Navigation wrapper component to access location and handle active links
 function Navigation({ user, logout }) {
